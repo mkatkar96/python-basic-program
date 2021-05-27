@@ -1,0 +1,65 @@
+#FUCTIONS
+#eg-
+'''def hii_guys(name,age):
+    print("hello " +name+ "you are"+age)
+print ("top")
+hii_guys("mukul","22")
+print("bottom")
+
+
+#1.function more eg-
+'''def add(x,y):
+    c = x + y
+    print(c)
+
+
+add(5,6)'''
+
+
+
+      #or- we can return return the anwser to store the result in another veriable
+
+'''def add(x,y):
+     c = x + y
+     return c
+result = add(5,6)
+print(result)'''
+
+#note= in function we neither use call by refrece nor call by value..
+
+#2.retun multiple values from a single function
+
+'''def add(x , y):
+    c= x + y
+    d = x - y
+    return c,d
+result1,result2 = add (50,40)
+print(result1,result2)'''
+
+#3.exponent function
+
+def raise_to_power(base_num, pow_num):
+    result = 1
+    for index in range(pow_num):
+        result = result * base_num
+    return result
+
+print(raise_to_power(3, 2))
+'''
+
+#4.pasing a list to a function
+
+list = [1,2,3,4,5,6,"mukul"]
+even , odd = count(list)
+def count(list):
+    even = 0
+    odd = 0
+    for i in list:
+        if i % 2 == 0:
+            even= even +1
+        else:
+            odd= odd + 1
+    return even , odd
+print("even=",even )
+print("odd=",odd)
+
